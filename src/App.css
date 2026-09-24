@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #F5EEE5;
+}
+
+.banner {
+  background-image: url('./assets/banner-image.png');
+  height: 90vh;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.banner2 {
+  background-image: url('./assets/banner2-image.png');
+  height: auto;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+.button:hover {
+  transform: translateX(7px);
+  background:linear-gradient(135deg,#F5EEE5,#2C1C13);
+  color: #F5EEE5;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    height: 350px;
+    background-position: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .banner {
+    height: 'auto';
+    background-position: left;
+  }
+}
