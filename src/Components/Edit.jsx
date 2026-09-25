@@ -58,16 +58,12 @@ function Edit({ item, updateProduct }) {
                         </Box>
                         <Box sx={{ mb: 2 }}>
                             <Typography sx={{ color: '#2C1C13', fontFamily: '"Inter", sans-serif' }}>Price</Typography>
-                            <TextField onChange={(e) => setForm({ ...form, price: e.target.value })} value={form.price} id="outlined-basic" placeholder='Price' variant="outlined" fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' } } }} />
+                            <TextField onChange={(e) => setForm({ ...form, price: e.target.value })} type='number' value={form.price} id="outlined-basic" placeholder='Price' variant="outlined" fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' } } }} />
                         </Box>
                         <Box sx={{ mb: 2 }}>
                             <Typography sx={{ color: '#2C1C13', fontFamily: '"Inter", sans-serif' }}>Description</Typography>
                             <TextField onChange={(e) => setForm({ ...form, description: e.target.value })} value={form.description} id="outlined-basic" placeholder='Description' variant="outlined" multiline maxRows={4} fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' } } }} />
                         </Box>
-                        {/* <Box>
-            <Typography sx={{ color: '#2C1C13', fontFamily: '"Inter", sans-serif'}}>Add Product</Typography>
-             <TextField id="outlined-basic" placeholder='Add Product' variant="outlined" fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': {  borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' }}}}/>
-          </Box> */}
                     </Box>
                 </DialogContent>
                 <DialogActions>

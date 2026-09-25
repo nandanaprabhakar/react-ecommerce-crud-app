@@ -64,12 +64,12 @@ function HomePage() {
         <Header color={'#F5EEE5'} />
         <Box sx={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)', left: { xs: '6%', md: '8%' } }}>
           <Typography sx={{ color: '#E6D8C5', fontWeight: 500, fontFamily: '"Cormorant Garamond", serif', fontSize: { xs: '34px', sm: '44px', md: '58px' } }}>
-            Curated Objects,<br /> Beautifuly Made
+            Curated Objects,<br /> Beautifully Made
           </Typography>
           <Typography sx={{ color: '#E6D8C5', fontWeight: 500, fontFamily: '"Inter", sans-serif', fontSize: { xs: '9px', sm: '13px', md: '15px' } }}>
             Thoughtfully selected pieces for a beautifully considered everyday.
           </Typography>
-          <Link to={'/product'}>
+          <Link to={'/product'} style={{ textDecoration: 'none' }}>
             <Button variant='outlined' sx={{ color: '#C17925', borderColor: '#C17925', borderRadius: 60, left: '50%', transform: 'translateX(-50%)', mt: 2 }}>Explore Collection <EastSharpIcon sx={{ ml: 1 }} /></Button>
           </Link>
         </Box>
@@ -91,7 +91,7 @@ function HomePage() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Link to={`/product-details/${item?.id}`}>
+                <Link to={`/product-details/${item?.id}`} style={{ textDecoration: 'none' }}>
                   <Button className='button' size="small" variant='text' sx={{ color: '#2C1C13', mt: -2 }}>View Details <EastSharpIcon sx={{ ml: 1 }} /></Button>
                 </Link>
               </CardActions>

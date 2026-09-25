@@ -15,7 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { TbBrandZulip } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'Poduct'];
+const pages = ['Home', 'Product'];
 
 function Header({ color }) {
 
@@ -54,7 +54,7 @@ function Header({ color }) {
               <Menu id="menu-appbar" anchorEl={anchorElNav} anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }} keepMounted transformOrigin={{ vertical: 'top', horizontal: 'left' }}
                open={Boolean(anchorElNav)} onClose={handleCloseNavMenu} sx={{ display: { xs: 'block', md: 'none' } }}> 
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={page == 'Home' ? '/' : '/product'}> 
+                  <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={page == 'Home' ? '/' : '/product'} sx={{ textDecoration: 'none' }}> 
                     <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
                   </MenuItem>
                 ))}
@@ -68,7 +68,7 @@ function Header({ color }) {
                 <Button component={Link} to={page == 'Home' ? '/' : '/product'}
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color, display: 'block' }}
+                  sx={{ my: 2, color, display: 'block', textDecoration: 'none' }}
                 >
                   {page}
                 </Button>

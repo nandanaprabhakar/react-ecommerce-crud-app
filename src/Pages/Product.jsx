@@ -119,7 +119,7 @@ function Product() {
                 </CardContent>
                 <CardActions>
                   <div style={{ width: '100%' }} className="d-flex justify-content-between align-items-center px-2">
-                    <Link to={`/product-details/${item?.id}`}>
+                    <Link to={`/product-details/${item?.id}`} style={{ textDecoration: 'none' }}>
                       <Button className='button' size="small" variant='text' sx={{ color: '#2C1C13', mt: -2 }}>View Details <EastSharpIcon sx={{ ml: 1 }} /></Button>
                     </Link>
                     <div className="d-flex align-items-start gap-1">

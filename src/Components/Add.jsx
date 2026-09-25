@@ -67,7 +67,7 @@ function Add({addProduct}) {
                         </Box>
                         <Box sx={{ mb: 2 }}>
                             <Typography sx={{ color: '#2C1C13', fontFamily: '"Inter", sans-serif' }}>Price</Typography>
-                            <TextField onChange={(e) => setForm({ ...form, price: e.target.value })} id="outlined-basic" placeholder='Price' variant="outlined" fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' } } }} />
+                            <TextField onChange={(e) => setForm({ ...form, price: e.target.value })} type='number' id="outlined-basic" placeholder='Price' variant="outlined" fullWidth sx={{ '& .MuiOutlinedInput-root': { '& fieldset': { borderColor: '#2C1C13' }, '&:hover fieldset': { borderColor: '#2C1C13' }, '&.Mui-focused fieldset': { borderColor: '#2C1C13' }, '& .MuiOutlinedInput-input': { color: '#2C1C13' } } }} />
                         </Box>
                         <Box sx={{ mb: 2 }}>
                             <Typography sx={{ color: '#2C1C13', fontFamily: '"Inter", sans-serif' }}>Description</Typography>

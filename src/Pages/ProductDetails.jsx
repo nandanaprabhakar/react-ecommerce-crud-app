@@ -22,7 +22,7 @@ function ProductDetails() {
     };
     useEffect(() => {
         getProduct();
-    }, []);
+    }, [id]);
 
     return (
         <div>
@@ -49,14 +49,12 @@ function ProductDetails() {
                                 {product?.description}
                             </Typography>
                             <Box sx={{ display: 'flex', justifyContent: { xs: 'center', sm: 'start' } }}>
-                                <Button variant="contained" sx={{ color: '#E6D8C5', background: 'linear-gradient(135deg,#a28a6a,#2C1C13)', color: '#F5EEE5', borderColor: '#22160f', mt: 3 }} >
+                                <Button variant="contained" sx={{ color: '#E6D8C5', background: 'linear-gradient(135deg,#a28a6a,#2C1C13)', borderColor: '#22160f', mt: 3 }} >
                                     Explore Collection
                                 </Button>
                             </Box>
                         </Box>
-                        <Box></Box>
                     </Col>
-
                 </Row>
             </Container>
             <Footer/>
